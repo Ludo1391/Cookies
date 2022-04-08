@@ -1,11 +1,10 @@
 <?php
-    // Heroku connection
-    $dsn = 'mysql:host=u6354r3es4optspf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=wqynmrlu0rnt5epv';
-    $username = 'h0pv4uzkya2kb1o5';
-    $password = 'uszhmvpb8vqd4i7m'; 
+    $dsn = 'mysql://e62ld9pn0f7x0xzk:lta7hrufcx8aj5h9@tvcpw8tpu4jvgnnq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/qjxdxft63112ooy3';
+    
+    $username = 'e62ld9pn0f7x0xzk';
+    $password = 'lta7hrufcx8aj5h9'; 
     
     try {
-        // Heroku connection
         $db = new PDO($dsn, $username, $password);
     } catch (PDOException $e) {
         $error = "Database Error: ";
